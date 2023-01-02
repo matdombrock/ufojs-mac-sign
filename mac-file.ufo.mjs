@@ -1,6 +1,6 @@
 export default {
 	cmd: 'mac-file',
-	help: 'iss - Checks the location of the international space station',
+	help: 'mac-file <file> - Uses the `file` command to check the file architecture',
 	async script(args, ufo, tools){
         const {$} = tools;
         await $`file ${args[0]}/Contents/MacOS/*`;

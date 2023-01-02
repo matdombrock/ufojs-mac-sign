@@ -1,7 +1,7 @@
-import verify from './verify.mjs';
+import verify from './core/verify.mjs';
 export default {
 	cmd: 'mac-verify',
-	help: 'iss - Checks the location of the international space station',
+	help: 'mac-verify <file> <verbose> - Verifies the file signature',
 	async script(args, ufo, tools){
         const targetFile = args[0];
         const verbose =  args[1] || 0;

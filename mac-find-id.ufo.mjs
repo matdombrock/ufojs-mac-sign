@@ -1,6 +1,6 @@
 export default {
 	cmd: 'mac-find-id',
-	help: 'iss - Checks the location of the international space station',
+	help: 'mac-find-id - Finds the locally installed developr IDs',
 	async script(args, ufo, tools){
 		const {$} = tools;
         await $`security find-identity -v -p codesigning`;
